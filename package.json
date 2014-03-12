@@ -1,0 +1,28 @@
+{
+  "name": "feed.js",
+  "version": "0.0.1",
+  "description": "A feed generator with support for custom namespaces",
+  "main": "lib/feed.js",
+  "repository": "https://github.com/halfdan/feed.js",
+  "scripts": {
+    "test": "grunt test --verbose"
+  },
+  "keywords": [
+    "feed",
+    "rss",
+    "iTunes"
+  ],
+  "author": "Fabian Becker",
+  "license": "MIT",
+  "dependencies": {
+    "xml": "0.0.12"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.3",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-mocha-cli": "^1.7.0",
+    "matchdep": "^0.3.0",
+    "mocha": "^1.17.1",
+    "should": "^3.1.3"
+  }
+}
