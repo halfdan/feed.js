@@ -15,11 +15,11 @@
   "author": "Fabian Becker",
   "license": "MIT",
   "dependencies": {
-    "xml": "0.0.12"
+    "elementtree": "0.1.6"
   },
   "devDependencies": {
     "grunt": "^0.4.3",
-    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-jscs": "~0.7.1",
     "grunt-mocha-cli": "^1.7.0",
     "matchdep": "^0.3.0",
     "mocha": "^1.17.1",

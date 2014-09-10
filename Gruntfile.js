@@ -3,14 +3,9 @@ module.exports = function (grunt) {
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
     grunt.initConfig({
-    	jshint: {
-    		options: {
-                // node environment
-                node: true,
-                // browser environment
-                browser: false,
-                // allow dangling underscores in var names
-                nomen: true
+        jscs: {
+            options: {
+                config: '.jscsrc'
             },
             files: {
                 src: [
@@ -18,8 +13,8 @@ module.exports = function (grunt) {
                     'test/*.js'
                 ]
             }
-    	},
-    	mochacli: {
+        },
+        mochacli: {
             options: {
                 ui: 'bdd',
                 reporter: 'spec',
@@ -32,7 +27,7 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('test', ['jshint', 'mochacli:all']);
+    grunt.registerTask('test', ['jscs', 'mochacli:all']);
 
     grunt.registerTask('default', ['test']);
 };
