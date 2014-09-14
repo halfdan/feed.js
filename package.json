@@ -15,7 +15,8 @@
   "author": "Fabian Becker",
   "license": "MIT",
   "dependencies": {
-    "elementtree": "0.1.6"
+    "elementtree": "0.1.6",
+    "lodash": "2.4.1"
   },
   "devDependencies": {
     "grunt": "^0.4.3",
